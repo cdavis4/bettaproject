@@ -1,0 +1,39 @@
+{
+  "bettas": [{
+    "id": 1,
+    "name": "Shark Food",
+    "is_favorite": "false",
+    "color": "blue",
+    "photograph": "blue1.jpeg",
+    "photographSmall1x": "blue1.jpeg",
+    "photographLg1x": "blue1.jpeg",
+    "photographLg2x": "blue1.jpeg",
+    "alt": "blue betta fish",
+    "date_birth": "June 2018",
+    "tail_type": "Veil Tail",
+    "sale": "for sale",
+    "description":"Shark is a hardy betta fit for a new owner.",
+    "parents": {
+      "mother": "Blue,Veil",
+      "father": "Blue,Veil"
+      }
+  }, {
+    "id": 2,
+    "name": "Emily",
+    "is_favorite": "true",
+    "color": "blue",
+    "photograph": "blue1.jpeg",
+    "photographSmall1x": "2-300_1x.jpg",
+    "photographLg1x": "2-600_1x.jpg",
+    "photographLg2x": "2-600_2x.jpg",
+    "alt": "betta fish",
+    "date_birth": "June 2018",
+    "tail_type": "Half Moon",
+    "sale": "sold",
+    "description":"Emily is a beautiful blue pure strain veil tail.",
+    "parents": {
+      "mother": "Blue,Veil",
+      "father": "Red, HalfMoon"
+      }
+    }]  
+}

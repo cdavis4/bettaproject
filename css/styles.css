@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* CSS Document */
+html{overflow-x: hidden;}
+
+body,td,th,p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333;
+	line-height: 1.5;
+}
+body {
+	background-color: #fdfdfd;
+}
+ul, li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333;
+}
+button, a {
+	color: #046b99;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #aeb0b5;
+	text-decoration: none;
+}
+
+a img{
+	border: none 0px #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; width: 1px; 
+ 
+}
+#maincontent {
+  background-color: #f3f3f3;
+  max-height: 100%;
+  margin: 0;
+}
+#footer {
+  background-color: #444;
+  color: white;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* ====================== Navigation ====================== */
+.header__logo {
+  height: 20%;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 10px;
+  position: absolute;
+  color: grey;
+  right: 0;
+  z-index: 1;
+}
+header {
+  background-color: #323a45;
+  text-align: left;
+  margin: auto;
+}
+header h1 {
+  margin: auto;
+  padding: 0.5em;
+  color: #fff;
+  display: inline-block;
+}
+h1 {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 200;
+  letter-spacing: 10px;
+}
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+#breadcrumb {
+    list-style: none;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Display list items side by side */
+#breadcrumb li {
+    display: inline;    
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+#breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+#breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+#breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/* ====================== Map ====================== */
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+}
+/* ====================== betta Filtering ====================== */
+.filter-options {
+  width: 100%;
+  /*height: 50px;*/
+  background-color: #323a45;
+  align-items: center;
+}
+.filter-options h2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 20px;
+  padding: 10px;
+}
+.filter-options select {
+  background-color: white;
+  border: 1px solid #fff;
+  font-family: Arial,sans-serif;
+  font-size: 11pt;
+  height: 35px;
+  letter-spacing: 0;
+  margin: 10px;
+  padding: 0 10px;
+  width: 200px;
+}
+
+/* ====================== betta Listing ====================== */
+
+.favorite-star-character{
+  color: #ccd6dd;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 2em;
+}
+.favorite-star-character.active{
+  color:#ffac33;
+}
+.favorite-star-character:hover{
+  color: yellow;
+  content: attr(data-tooltip);
+}
+
+#bettas-list {
+  background-color: #f1f1f1;
+  list-style: outside none none;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+}
+#bettas-list li {
+  background-color: white;
+  border: 2px solid #ccc;
+  font-family: Arial,sans-serif;
+  margin: 15px;
+  min-height: 380px;
+  padding: 25px;
+
+}
+
+#bettas-list .betta-img {
+  background-color: rgb(253, 253, 253);
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  /* min-height: 248px;*/
+  min-width: 100%;
+}
+
+#bettas-list p {
+  margin: 0;
+  font-size: 11pt;
+}
+#bettas-list li button {
+  background-color: #046b99;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  display: inline-block;
+  font-size: 10pt;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+#bettas-list li h3 {
+  color: #046b99;
+  font-family: Arial,sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin: 20px 0 5px;
+}
+
+/* ====================== betta Details ====================== */
+
+.inside{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+.inside #map {
+  background-color: #ccc;
+  width: 90%;
+  z-index: 0; /* Sit behind modal if open https://github.com/Leaflet/Leaflet/issues/3690*/
+}
+
+#betta-name {
+  color: #046b99;
+  font-family: Arial,sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+#betta-img {
+  width: 90%;
+}
+#betta-tail {
+  background-color: #323a45;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+}
+#site-container, #purchase-container {
+padding: 25px;
+}
+#purchase-container h3 {
+  color: #046b99;
+  font-size: 16pt;
+  font-weight: 300;
+}
+
+#purchase-container label {
+  padding-top: 7px;
+  margin-bottom: 0;
+}
+#purchase-container #reviewBtn {
+  cursor: pointer;
+  background-color: #046b99;
+  border-bottom: 3px solid #eee;
+  color: #fff;
+  display: inline-block;
+  font-size: 10pt;
+  margin: 15px 0 0;
+  padding: 8px 30px 10px;
+  text-align: center;
+}
+
+#betta-list li {
+  background-color: #fff;
+  border: 2px solid #f3f3f3;
+  display: block;
+  list-style-type: none;
+  margin: 0 0 30px;
+  overflow: hidden;
+  padding: 0 20px 20px;
+  position: relative;
+  width: 85%;
+}
+#betta-list li p {
+  margin: 0 0 10px;
+}
+#betta-hours td {
+  color: black;
+}
+
+/* ====================== betta Order Form ====================== */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #323a45;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form_div{
+  width: 100%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+    border: 1px solid #888;
+    margin:15% auto;
+    font-size: 1em;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    min-height: 200px;
+    text-align: left;
+    width: 65%;
+    flex:auto;
+    display: flow-root;
+}
+
+.modal-content label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.modal-content button {
+  background-color: #046b99;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+#comments{
+  background-color: white;
+  font-family: Arial,sans-serif;
+  letter-spacing: 0;
+  margin: 10px;
+  padding: 0 10px;
+  width: 80%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+select#rating{
+  font-size: 1em;
+}
+
