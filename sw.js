@@ -173,20 +173,22 @@ self.addEventListener('fetch', function (event) {
     })
   );
 });
+
+
 /**
  * fetch service worker
-
+ 
 self.addEventListener('fetch', event => {
   const request = event.request;
   const requestUrl = new URL(request.url);
   
   // 1. filter Ajax Requests
-  if ((requestUrl.port === '8000')) {
-    event.respondWith(idbResponse(request));
-  }
+ // if ((requestUrl.port === '8000')) {
+ //   event.respondWith(idbResponse(request));
+ // }
 
-  if(requestUrl.port !== '8000') {
+  //if(requestUrl.port == '8000') {
     event.respondWith(cacheResponse(request));
-  }
+ // }
 });
- */
+**/

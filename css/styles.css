@@ -382,4 +382,11 @@ padding: 25px;
 select#rating{
   font-size: 1em;
 }
+ textarea#message{
+  overflow: auto;
+  width: 90%;
+  height:5em;
+  border:none;
+  resize:auto;
+}
 
