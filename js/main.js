@@ -1,9 +1,6 @@
 let bettas,
   colors,
   tailTypes
-var newMap
-var markers = []
-
 
 /**
  * Fetch colors and tails as soon as the page is loaded.
@@ -313,7 +310,7 @@ createForm = () => {
   const div_button = document.createElement('div');
   div_button.setAttribute("class", "form_control");
   const input_button = document.createElement('button');
-  input_button.setAttribute("onclick","DBHelper.postContact()")
+  input_button.setAttribute("onclick","DBHelper.postContact()");
   input_button.setAttribute("id","submit_button");
   input_button.innerHTML ="Submit";
   div_button.appendChild(input_button);
@@ -322,7 +319,7 @@ createForm = () => {
   form.appendChild(div_email);
   form.appendChild(div_message);
   form.appendChild(div_button);
-  //form.setAttribute("action",DBHelper.sendContactInfo);
- // form.setAttribute("method", "post");
+  //form.setAttribute("action",DBHelper.sendContactInfo());
+  //form.setAttribute("method", "post");
   return form;
 }

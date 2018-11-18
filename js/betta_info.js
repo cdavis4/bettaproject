@@ -117,7 +117,7 @@ fillBettaHTML = (betta = self.betta) => {
 
 image.alt = "photo from betta " + betta.name;
 
-image.srcset = "/img/blue1.jpg";
+image.srcset = "/~davicarr/bettaFish/img/blue1.jpg";
 //+ betta.id 
 //+ "-300_1x.jpg 400w, /img/" 
 //+betta.id + "-600_1x.jpg 1000w, /img/" + betta.id  + "-600_2x.jpg 4000w";

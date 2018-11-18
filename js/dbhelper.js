@@ -300,7 +300,7 @@ class DBHelper {
   return (`/~davicarr/bettaFish/img/${betta.photograph}-300_2x.jpg`);
   }
 
-  static sendContactInfo(){
+  static get sendContactInfo(){
     return 'http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php';
   }
 
@@ -319,11 +319,10 @@ class DBHelper {
         {
         console.log("You are offline");
         }
-    const myPost = fetch(DBHelper.sendContactInfo, {
+    const myPost = fetch('http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php', {
           method: "POST", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, cors, *same-origin
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-          mode: "cors", // include cross origin access because not using my own server
           headers: {
               "Content-Type": "application/json; charset=utf-8",
                // "Content-Type": "application/x-www-form-urlencoded",
